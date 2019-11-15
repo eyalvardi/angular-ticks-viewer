@@ -1,28 +1,37 @@
-# AngularTicksViewer
+# Angular Ticks Viewer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+Angular ticks viewer component can help to see how many ticks has per second.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Usage
 
-## Code scaffolding
+1. import the TicksViewerModule from 'ticks-viewer'
+2. Use the <ticks-viewer> component.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```javascript
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-## Build
+import {AppComponent} from './app.component';
+import {TicksViewerModule} from "ticks-viewer";
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+@NgModule({
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,       
+        TicksViewerModule
+    ],
+    bootstrap: [AppComponent]
+})
+export class AppModule {
+}
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-"# angular-ticks-viewer" 
+@Component({
+  selector: 'app-root',
+  template:`
+  <div>
+      <ticks-viewer></ticks-viewer>
+     ...
+  </div>  
+`})
+export class AppComponent{}
