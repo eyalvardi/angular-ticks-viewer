@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsTickViewerShell",
+  "title": "Tick Viewer Shell Options Schema",
+  "type": "object",
+  "properties": {
+    "skipPackageJson": {
+      "type": "boolean",
+      "default": false,
+      "description": "Do not add materials dependencies to package.json (e.g., --skipPackageJson)"
+    }
+  },
+  "required": []
+}

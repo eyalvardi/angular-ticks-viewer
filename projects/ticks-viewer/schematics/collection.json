@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Add Tick Viewer to an application",
+      "factory": "./shell/index#ngAdd",
+      "aliases": ["ticks-viewer"]
+    }
+  }
+}

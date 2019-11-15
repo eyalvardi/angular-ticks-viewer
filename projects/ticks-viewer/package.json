@@ -1,0 +1,20 @@
+{
+  "name": "ticks-viewer",
+  "version": "0.0.1",
+  "scripts": {    
+    "copy:json" : "cpx ./schematics/**/*.json ../../dist/ticks-viewer/schematics",
+    "build:tsc" : "tsc -p tsconfig.schematics.json",
+    "build"     : "npm run build:tsc && npm run copy:json"
+    
+
+  },
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "devDependencies": {
+    "@angular-devkit/core": "^8.3.19",
+    "@angular-devkit/schematics": "^8.3.19"
+  },
+  "schematics" : "./schematics/collection.json"
+}

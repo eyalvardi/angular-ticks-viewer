@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ticks-viewer": [
+        "dist/ticks-viewer"
+      ],
+      "ticks-viewer/*": [
+        "dist/ticks-viewer/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

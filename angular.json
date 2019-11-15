@@ -78,6 +78,41 @@
           }
         }
       }
+    },
+    "ticks-viewer": {
+      "projectType": "library",
+      "root": "projects/ticks-viewer",
+      "sourceRoot": "projects/ticks-viewer/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ticks-viewer/tsconfig.lib.json",
+            "project": "projects/ticks-viewer/ng-package.json"                    
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ticks-viewer/src/test.ts",
+            "tsConfig": "projects/ticks-viewer/tsconfig.spec.json",
+            "karmaConfig": "projects/ticks-viewer/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ticks-viewer/tsconfig.lib.json",
+              "projects/ticks-viewer/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "angular-ticks-viewer"
 }

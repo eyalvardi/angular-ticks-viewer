@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "schematics",
+    "outDir": "../../dist/ticks-viewer/schematics",
+    "lib": ["es2018", "dom"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    
+    "noEmitOnError": false,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "es6",
+    "types": [
+      "jasmine",
+      "node"
+    ]
+  },
+  "include": [
+    "schematics/**/*"
+  ],
+  "exclude": [
+    "*/files/**/*",
+    "**/*spec*"
+  ]
+}
