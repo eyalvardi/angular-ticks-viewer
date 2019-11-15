@@ -6,7 +6,6 @@
     "start": "ng serve",
     "build": "ng build",
     "build-ticks-viewer": "ng build ticks-viewer",
-    "copy-schematics": "cpx projects/ticks-viewer/schematics/**/* dist/ticks-viewer/schematics",
     "schematics-debug": "schematics .:ng-add  --debug=true --project=angular-ticks-viewer"
   },
   "schematics": "./dist/ticks-viewer/schematics/collection.json",

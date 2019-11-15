@@ -6,6 +6,9 @@ Angular ticks viewer component can help to see how many ticks has per second.
 
 [Live demo](http://ng-course.org/ng-course/demos/performance-optimization/#/counter)
 
+## Install
+ng add ticks-viewer
+
 ## Usage
 
 1. import the TicksViewerModule from 'ticks-viewer'

@@ -1,12 +1,11 @@
 {
   "name": "ticks-viewer",
-  "version": "0.0.1",
+  "version": "1.0.3",
+  "repository": {"url": "https://github.com/eyalvardi/angular-ticks-viewer"},
   "scripts": {    
+    "build-schematics": "npm run build:tsc && npm run copy:json",
     "copy:json" : "cpx ./schematics/**/*.json ../../dist/ticks-viewer/schematics",
-    "build:tsc" : "tsc -p tsconfig.schematics.json",
-    "build"     : "npm run build:tsc && npm run copy:json"
-    
-
+    "build:tsc" : "tsc -p tsconfig.schematics.json" 
   },
   "peerDependencies": {
     "@angular/common": "^8.2.14",
